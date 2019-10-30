@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1F89BE9-96AE-E52E-F6E7-8C643BFD3499" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="ACCOUNT">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>ACCOUNT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:30 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="779E75B6-5F97-B509-5B0A-A57D3C1EF095">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CUSTOMER" id="F5BEC79C-CD3B-FF34-DEFA-64223FC5D586">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ID_CUSTOMER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A15A5FE-8FDC-6D50-9111-774881912B23" referredColumn="A0FA10C7-EE3A-D45B-3EB3-9ECC80EBB211"/>
+</associations>
+</Column>
+<Column name="DATE_OPEN" id="C9B6564D-C295-B086-C72E-5E47ADFF016A">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>DATE_OPEN</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DEPARTMENT" id="CD6F7829-7959-925E-F1D8-E5CB78AEFC26">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ID_DEPARTMENT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AFDCEA4-8002-C4BB-FECC-6217005F3DBD" referredColumn="6B0E77B7-C7C9-DA28-ACC8-84CC32F66A97"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65E0278C-2346-FDA6-6DF0-113542630FB4" name="ACCOUNT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>ACCOUNT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="779E75B6-5F97-B509-5B0A-A57D3C1EF095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E1A403E-C9D1-3ADC-FB32-04412A823F74" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="ACCOUNT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>ACCOUNT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="779E75B6-5F97-B509-5B0A-A57D3C1EF095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="454C041B-C85A-E088-2DD6-6C05825820C7" name="ACCOUNT_CUSTOMER_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5BEC79C-CD3B-FF34-DEFA-64223FC5D586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8D04DBE-A83A-78C6-D0B0-5C3A740FC079" name="ACCOUNT_DEPARTMENT_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD6F7829-7959-925E-F1D8-E5CB78AEFC26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

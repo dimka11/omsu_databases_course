@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9E4F82C-507B-ACC7-8725-ECD120CAD31F" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="LOAN">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>LOAN</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C0188669-813C-CADC-74D2-C290E4E634C3">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ACCOUNT" id="46F19FD0-288C-D8BE-DD45-3EFEBAC68C15">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>ID_ACCOUNT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CUSTOMER" id="2241F258-BE4E-5960-3B0A-57050B68BBF9">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>ID_CUSTOMER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2C25154-0ED8-DDFF-F120-4EEBAD485431" referredColumn="A0FA10C7-EE3A-D45B-3EB3-9ECC80EBB211"/>
+</associations>
+</Column>
+<Column name="ID_CREDIT" id="307D7DA3-FF61-9277-5F9D-36C8609623E0">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>ID_CREDIT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CBF0F40-6D4E-ED32-DB3F-90825235D4F5" referredColumn="E418293E-308A-CC8B-17DC-DE5428351F73"/>
+</associations>
+</Column>
+<Column name="AMOUNT" id="B48E22ED-5913-F11B-7F9B-DB6EF0A60975">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_ISSUE" id="F4385DC9-7105-10F9-B8DB-B4876158A978">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>DATE_ISSUE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOAN_REPAY_PERIOD" id="0168E983-6799-67C2-5BD2-A0FF8DB46915">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>LOAN_REPAY_PERIOD</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOAN_REPAYMENT_BALANCE" id="8CFA12BC-C6C2-6C08-55BA-2588C84A68A7">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>LOAN_REPAYMENT_BALANCE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB8F8C66-BCCE-4BFD-627A-4EB603E9BA43" name="LOAN_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>LOAN_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0188669-813C-CADC-74D2-C290E4E634C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15135C02-6E93-FAC3-31EF-1997A52CA7EA" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="LOAN_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>LOAN_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0188669-813C-CADC-74D2-C290E4E634C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3949106-248A-777D-D752-ECD6D667C17E" name="CREDIT_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="307D7DA3-FF61-9277-5F9D-36C8609623E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3DB9DBC-2477-BF1D-4F6B-0028DB975BE8" name="CUSTOMER_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2241F258-BE4E-5960-3B0A-57050B68BBF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

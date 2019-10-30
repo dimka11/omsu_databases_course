@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CUSTOMER" directorySegmentName="seg_0" id="5B1D1289-8FEC-7A73-7D79-8281AB7A17A0">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:30 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>63082772-5E4D-74FE-FCB0-D1772A4620A2</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PASSPORT" id="12869AC6-F1EF-B319-4061-190E03671269">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DISCOUNT" id="619AA9C9-1562-77CB-7DAE-965DCD15DF33">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIDDLE_NAME" id="66DEA315-ADC7-54BB-B834-621375575FF5">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="A0FA10C7-EE3A-D45B-3EB3-9ECC80EBB211">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="BCFF5481-7B4A-01CA-F29A-F66585282A87">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="E4E69846-A3A2-3B4E-7CA9-7AF0F7D3DED3">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SECOND_NAME" id="ED4DCD8B-B34C-D495-73D0-349A9059BEC1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BIRTHDATE" id="F4FF36AD-F5CD-AF7C-0E05-83BE48E3C690">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUSTOMER_PK" id="21BE64DB-C365-EB6B-0050-51510E74503F">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DISCOUNT_FK" id="6D6E1DB3-580F-9B76-E6EC-5790BE4281DB">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUSTOMER_PK" id="8B896FED-E033-9C9E-F60B-FFC6AE2C9294">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<existingIndex>21BE64DB-C365-EB6B-0050-51510E74503F</existingIndex>
+<indexSegment>5DA59E90-28AD-21D1-B43D-2897383CB103</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

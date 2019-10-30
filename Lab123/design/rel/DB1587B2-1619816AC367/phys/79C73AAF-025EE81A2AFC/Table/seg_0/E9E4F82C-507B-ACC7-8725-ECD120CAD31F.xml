@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LOAN" directorySegmentName="seg_0" id="E9E4F82C-507B-ACC7-8725-ECD120CAD31F">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>63082772-5E4D-74FE-FCB0-D1772A4620A2</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LOAN_REPAY_PERIOD" id="0168E983-6799-67C2-5BD2-A0FF8DB46915">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CUSTOMER" id="2241F258-BE4E-5960-3B0A-57050B68BBF9">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CREDIT" id="307D7DA3-FF61-9277-5F9D-36C8609623E0">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ACCOUNT" id="46F19FD0-288C-D8BE-DD45-3EFEBAC68C15">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOAN_REPAYMENT_BALANCE" id="8CFA12BC-C6C2-6C08-55BA-2588C84A68A7">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="B48E22ED-5913-F11B-7F9B-DB6EF0A60975">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="C0188669-813C-CADC-74D2-C290E4E634C3">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_ISSUE" id="F4385DC9-7105-10F9-B8DB-B4876158A978">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOAN_PK" id="15135C02-6E93-FAC3-31EF-1997A52CA7EA">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CREDIT_FK1" id="B3949106-248A-777D-D752-ECD6D667C17E">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CUSTOMER_FK1" id="B3DB9DBC-2477-BF1D-4F6B-0028DB975BE8">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LOAN_PK" id="EB8F8C66-BCCE-4BFD-627A-4EB603E9BA43">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<existingIndex>15135C02-6E93-FAC3-31EF-1997A52CA7EA</existingIndex>
+<indexSegment>5DA59E90-28AD-21D1-B43D-2897383CB103</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

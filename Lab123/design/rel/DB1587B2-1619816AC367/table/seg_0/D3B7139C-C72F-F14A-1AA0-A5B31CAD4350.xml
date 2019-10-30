@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3B7139C-C72F-F14A-1AA0-A5B31CAD4350" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="DISCOUNT">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>DISCOUNT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="399D579A-03D2-DEBB-5BB9-8A4F7AE4345E">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>DISCOUNT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="B7ADBF3D-C66B-D93B-2BF8-201E745DB82E">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>DISCOUNT</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="C243CF0D-1C13-AB92-CF84-9C6CC9C4C3EB">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>DISCOUNT</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D175CDB-ED14-4C42-DFBF-D1AF807947A5" name="DISCOUNT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>DISCOUNT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="399D579A-03D2-DEBB-5BB9-8A4F7AE4345E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C788434-7E03-C828-0FF5-84A5694548B9" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="DISCOUNT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>DISCOUNT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="399D579A-03D2-DEBB-5BB9-8A4F7AE4345E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

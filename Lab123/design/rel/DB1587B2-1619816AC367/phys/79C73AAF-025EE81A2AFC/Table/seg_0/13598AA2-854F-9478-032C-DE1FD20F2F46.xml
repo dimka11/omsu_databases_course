@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPARTMENT" directorySegmentName="seg_0" id="13598AA2-854F-9478-032C-DE1FD20F2F46">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>63082772-5E4D-74FE-FCB0-D1772A4620A2</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ADRESS" id="3AF0709A-F953-8FB7-C47A-EA7E387BE95D">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="6B0E77B7-C7C9-DA28-ACC8-84CC32F66A97">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="BFA65A24-33F7-1BF7-AEE7-2836E23BDACF">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TITLE" id="E2A10CEF-8E6D-D787-D658-D78F4185FC9E">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPARTMENT_PK" id="E5D5316C-D298-BC5F-ADBB-52718A4177F8">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENT_PK" id="616DEC26-D8D6-AE42-3E60-22D3984866C0">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<existingIndex>E5D5316C-D298-BC5F-ADBB-52718A4177F8</existingIndex>
+<indexSegment>5DA59E90-28AD-21D1-B43D-2897383CB103</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

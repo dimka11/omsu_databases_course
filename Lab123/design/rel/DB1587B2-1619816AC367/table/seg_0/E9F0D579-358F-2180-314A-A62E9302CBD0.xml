@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9F0D579-358F-2180-314A-A62E9302CBD0" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="OPERATION">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>OPERATION</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DB786487-3765-F1C0-7A40-F1D183093D81">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CUSTOMER" id="218CCBF9-F72C-DC70-7C42-B08A0ACE3A9B">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>ID_CUSTOMER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC38FAC0-7505-89D6-2685-F56F97AAC4A8" referredColumn="A0FA10C7-EE3A-D45B-3EB3-9ECC80EBB211"/>
+</associations>
+</Column>
+<Column name="DATE_OPERATION" id="3D527FC2-446A-2057-D1A1-FC5B6CA77DA9">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>DATE_OPERATION</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="616A364D-D9E4-CB32-0059-3CD479DB61E1">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT_TRANSFER" id="FE9CCF22-7A45-CE19-0CC5-1DD91520CDF3">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>AMOUNT_TRANSFER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ACCOUNT_SENDER" id="0A8B6B75-DF66-E223-742A-3E1A4A31C21F">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>ID_ACCOUNT_SENDER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1EFD187-7269-192C-5596-9C54BC676C1F" referredColumn="779E75B6-5F97-B509-5B0A-A57D3C1EF095"/>
+</associations>
+</Column>
+<Column name="ID_ACCOUNT_RECEIVER" id="42D957A2-CA00-B634-A11B-C3FB56423838">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>OPERATION</sourceObjSchema>
+<sourceObjName>ID_ACCOUNT_RECEIVER</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD5037DA-663D-9D18-BB15-4577A69B92AC" referredColumn="779E75B6-5F97-B509-5B0A-A57D3C1EF095"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="625C4199-36B9-52BE-7E18-503F881F26E0" name="OPERATION_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>OPERATION_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB786487-3765-F1C0-7A40-F1D183093D81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25E554AA-0A0C-BD16-D2CB-B6CF9934940B" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="OPERATION_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>OPERATION_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB786487-3765-F1C0-7A40-F1D183093D81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F556F47E-F0ED-768A-C50D-1A219AC6B0B3" name="OPERATION_ACCOUNT_R_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D957A2-CA00-B634-A11B-C3FB56423838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34A7520B-7AFE-69F7-20DC-864E52CCE61B" name="OPERATION_ACCOUNT_S_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A8B6B75-DF66-E223-742A-3E1A4A31C21F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0818A3CC-E09E-6E2B-D597-3B1F7AA14251" name="OPERATION_CUSTOMER_FK1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="218CCBF9-F72C-DC70-7C42-B08A0ACE3A9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

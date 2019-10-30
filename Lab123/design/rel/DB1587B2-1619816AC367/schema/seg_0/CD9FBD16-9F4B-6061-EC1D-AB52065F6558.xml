@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="C##DIMA" directorySegmentName="seg_0" id="CD9FBD16-9F4B-6061-EC1D-AB52065F6558">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:30 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</SchemaObject>

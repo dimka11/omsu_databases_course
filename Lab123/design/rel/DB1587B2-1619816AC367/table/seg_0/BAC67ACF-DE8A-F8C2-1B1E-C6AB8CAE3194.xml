@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAC67ACF-DE8A-F8C2-1B1E-C6AB8CAE3194" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="CREDIT">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>CREDIT</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:30 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E418293E-308A-CC8B-17DC-DE5428351F73">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>CREDIT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="A53491EE-8270-0A95-34E2-6FA72DEA0DE0">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>CREDIT</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOAN_RATE" id="AFADD44C-AA23-06F0-A77B-BCE544F2D32A">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>CREDIT</sourceObjSchema>
+<sourceObjName>LOAN_RATE</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64888BA2-9D74-740A-DB7E-7983308C5F65" name="CREDIT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>CREDIT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E418293E-308A-CC8B-17DC-DE5428351F73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12D9448C-F67C-03EE-44DC-D04372E78746" schemaObject="CD9FBD16-9F4B-6061-EC1D-AB52065F6558" name="CREDIT_PK">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>CREDIT_PK</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E418293E-308A-CC8B-17DC-DE5428351F73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

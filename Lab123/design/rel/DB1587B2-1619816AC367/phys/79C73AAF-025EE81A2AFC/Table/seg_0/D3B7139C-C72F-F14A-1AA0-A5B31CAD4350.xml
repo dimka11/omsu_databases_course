@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DISCOUNT" directorySegmentName="seg_0" id="D3B7139C-C72F-F14A-1AA0-A5B31CAD4350">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>63082772-5E4D-74FE-FCB0-D1772A4620A2</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="399D579A-03D2-DEBB-5BB9-8A4F7AE4345E">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TITLE" id="B7ADBF3D-C66B-D93B-2BF8-201E745DB82E">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="C243CF0D-1C13-AB92-CF84-9C6CC9C4C3EB">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DISCOUNT_PK" id="2C788434-7E03-C828-0FF5-84A5694548B9">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DISCOUNT_PK" id="1D175CDB-ED14-4C42-DFBF-D1AF807947A5">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<existingIndex>2C788434-7E03-C828-0FF5-84A5694548B9</existingIndex>
+<indexSegment>5DA59E90-28AD-21D1-B43D-2897383CB103</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="OPERATION" directorySegmentName="seg_0" id="E9F0D579-358F-2180-314A-A62E9302CBD0">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>63082772-5E4D-74FE-FCB0-D1772A4620A2</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ACCOUNT_SENDER" id="0A8B6B75-DF66-E223-742A-3E1A4A31C21F">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CUSTOMER" id="218CCBF9-F72C-DC70-7C42-B08A0ACE3A9B">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_OPERATION" id="3D527FC2-446A-2057-D1A1-FC5B6CA77DA9">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ACCOUNT_RECEIVER" id="42D957A2-CA00-B634-A11B-C3FB56423838">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="616A364D-D9E4-CB32-0059-3CD479DB61E1">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="DB786487-3765-F1C0-7A40-F1D183093D81">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT_TRANSFER" id="FE9CCF22-7A45-CE19-0CC5-1DD91520CDF3">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OPERATION_PK" id="25E554AA-0A0C-BD16-D2CB-B6CF9934940B">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>CD9FBD16-9F4B-6061-EC1D-AB52065F6558</schemaObject>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OPERATION_CUSTOMER_FK1" id="0818A3CC-E09E-6E2B-D597-3B1F7AA14251">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OPERATION_ACCOUNT_S_FK1" id="34A7520B-7AFE-69F7-20DC-864E52CCE61B">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OPERATION_ACCOUNT_R_FK1" id="F556F47E-F0ED-768A-C50D-1A219AC6B0B3">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="OPERATION_PK" id="625C4199-36B9-52BE-7E18-503F881F26E0">
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>5DA59E90-28AD-21D1-B43D-2897383CB103</segment>
+<tableSpace>05D6C8CB-70EB-5595-735B-76247E4E8866</tableSpace>
+<existingIndex>25E554AA-0A0C-BD16-D2CB-B6CF9934940B</existingIndex>
+<indexSegment>5DA59E90-28AD-21D1-B43D-2897383CB103</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

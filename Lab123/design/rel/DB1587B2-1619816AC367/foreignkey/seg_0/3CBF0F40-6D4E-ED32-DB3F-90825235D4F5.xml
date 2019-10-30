@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CBF0F40-6D4E-ED32-DB3F-90825235D4F5" containerWithKeyObject="E9E4F82C-507B-ACC7-8725-ECD120CAD31F" localFKIndex="B3949106-248A-777D-D752-ECD6D667C17E" name="CREDIT_FK1">
+<sourceConnName>Dima</sourceConnName>
+<sourceObjSchema>C##DIMA</sourceObjSchema>
+<sourceObjName>CREDIT_FK1</sourceObjName>
+<createdBy>Dima</createdBy>
+<createdTime>2019-09-24 15:48:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>C##DIMA.CREDIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BAC67ACF-DE8A-F8C2-1B1E-C6AB8CAE3194</referredTableID>
+<keyObject>64888BA2-9D74-740A-DB7E-7983308C5F65</keyObject>
+<referredKeyID>64888BA2-9D74-740A-DB7E-7983308C5F65</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

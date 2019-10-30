@@ -1,0 +1,5 @@
+--1.	Выбрать ФИО, адрес клиента, не бравших кредит.
+SELECT DISTINCT FIRST_NAME AS Фамилия, SECOND_NAME AS Имя, MIDDLE_NAME AS Отчество, ADDRESS AS Аддресс
+FROM CUSTOMER
+         LEFT JOIN LOAN L on CUSTOMER.ID = L.ID_CUSTOMER
+WHERE L.ID_CUSTOMER IS NULL
