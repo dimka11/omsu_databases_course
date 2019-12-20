@@ -1,0 +1,8 @@
+db.department.aggregate([
+    {
+        $unwind: "$ACCOUNT"
+    },
+    { $sort: { "ACCOUNT.AMOUNT": -1 } },
+    { $group: { _id: null, doc: { $first: '$$ROOT' } } },
+
+]).forEach(r => print(tojson(db.customer.find({ ID: r.doc.ACCOUNT.ID_CUSTOMER }, { _id: 0, }).next()))) 

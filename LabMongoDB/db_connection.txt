@@ -1,0 +1,6 @@
+add current ip address to mongodb atlas cloud
+
+mongo "mongodb+srv://cluster0-gp30s.mongodb.net/test"  --username dimka11
+ZetJg8MOWfuwPPk8
+
+use OmSUDBCourse

@@ -1,0 +1,4 @@
+db.contacts.insert([
+   { "_id": 1, "name": "Anne", "phone": "+1 555 123 456", "city": "London", "status": "Complete" },
+   { "_id": 2, "name": "Ivan", "city": "Vancouver" }
+])

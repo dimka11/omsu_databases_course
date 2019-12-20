@@ -1,0 +1,40 @@
+db.department.aggregate([
+   {
+     $lookup:
+       {
+         from: "customer",
+         localField: "ACCOUNT.ID_CUSTOMER",
+         foreignField: "ID",
+         as: "acc"
+       }
+  },
+  {
+      $match:
+      {
+           ADDRESS: /^Неф/
+      }
+  },
+  {
+      $unwind: "$acc"
+  },
+  {
+      $project: {
+          "acc.SECOND_NAME": 1,
+          "acc.FIRST_NAME": 1
+      }
+  },
+  {
+      $addFields: 
+      {
+          "second_name": "$acc.SECOND_NAME",
+          "first_name": "$acc.FIRST_NAME"
+      }
+  },
+  {
+      $match:
+      {
+           second_name: /^С/
+      }
+  }
+  
+])

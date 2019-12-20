@@ -1,0 +1,50 @@
+db.getCollection("department").find({"ACCOUNT.AMOUNT": 2999 }, { ACCOUNT: 1 }).forEach(result =>
+    result.ACCOUNT.forEach(r =>
+        {
+            if (r.AMOUNT == 2999)
+            {
+                printjson(r)
+                db.customer.find({ ID: r.ID_CUSTOMER }).forEach(rc =>
+                printjson(rc)
+                db.customer.remove( { ID: r.ID_CUSTOMER } )
+            )
+            } 
+
+        }
+        
+    )
+)
+
+
+
+
+
+db.customer.aggregate([
+    {
+        $match: {
+            "LOAN.AMOUNT": { $gte: 41000 }
+        }
+    },
+
+    {
+        $lookup: {
+            from: "department",
+            localField: "ID",
+            foreignField: "ACCOUNT.ID_CUSTOMER",
+            as: "customer"
+        }
+    },
+    { $match: { "myArray": { $ne: [] } } },
+    {
+        $unwind: {
+            path: "$customer",
+            preserveNullAndEmptyArrays: false
+        }
+    }
+    ,
+    {
+        $unwind: "$customer.ACCOUNT"
+    },
+    { $match: { $expr: { $eq: ["$customer.ACCOUNT.ID_CUSTOMER", "$ID"] } } },
+
+])              

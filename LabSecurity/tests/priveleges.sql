@@ -17,4 +17,19 @@ WHERE grantee='C##DIMA';
 
 
 
+GRANT SELECT, INSERT ON C##DIMA.DEPARTMENT TO C##NEW_OFFICIAL;
+GRANT SELECT, INSERT ON C##DIMA.ACCOUNT TO C##NEW_OFFICIAL;
+GRANT SELECT, INSERT ON C##DIMA.LOAN TO C##NEW_OFFICIAL;
+
+
+SELECT grantee, privilege, admin_option
+FROM dba_sys_privs
+WHERE grantee='C##NEW_CUSTOMER';
+
+SELECT grantee, table_name, privilege
+FROM dba_tab_privs
+WHERE grantee='C##NEW_CUSTOMER';
+
+
+
 

@@ -1,0 +1,22 @@
+db.getCollection('credit').insertMany([
+  {
+    "ID": 1,
+    "TITLE": "С очень большой ставкой",
+    "LOAN_RATE": 21
+  },
+  {
+    "ID": 3,
+    "TITLE": "Со большой ставкой ставкой",
+    "LOAN_RATE": 16
+  },
+  {
+    "ID": 2,
+    "TITLE": "Со средней ставкой",
+    "LOAN_RATE": 12
+  },
+  {
+    "ID": 4,
+    "TITLE": "С малой ставкой",
+    "LOAN_RATE": 9.5
+  }
+])

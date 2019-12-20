@@ -1,0 +1,40 @@
+db.customer.find({ "LOAN.AMOUNT": { $gte: 40000 } } , 
+{_id: 0, ID: 1, SECOND_NAME: 1, FIRST_NAME: 1, "LOAN.AMOUNT": 1 } )
+
+
+db.customer.aggregate(
+    [
+        {
+            $lookup:
+            {
+                from: "department",
+                localField: "ID",
+                foreignField: "ACCOUNT.ID_CUSTOMER",
+                as: "acc"
+            }
+        },
+        {
+          $match:
+          {
+              "acc": {$ne: []},
+              "ID": 3
+          }  
+        },
+        {
+            $unwind:
+            {
+                path: "$acc",
+                preserveNullAndEmptyArrays: false
+            }
+        },
+        {
+            $project:
+            {
+                SECOND_NAME: 1,
+                FIRST_NAME: 1,
+                ID: 1,
+                "acc.ACCOUNT.ID": 1
+            }
+        }
+    ]
+) 

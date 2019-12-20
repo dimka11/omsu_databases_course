@@ -1,0 +1,100 @@
+db.customer.aggregate([
+    {
+        $match: {
+            "LOAN.AMOUNT": {$exists: true}
+        }
+    },
+    {
+        $project: {
+            "FIRST_NAME": 1,
+            "SECOND_NAME": 1,
+            "LOAN.AMOUNT": {$subtract : [{$sum : "$LOAN.AMOUNT"},{$multiply : [{$sum : "$LOAN.AMOUNT"}, 0.05]}]},
+            "_id": 0
+        }
+    }
+]).pretty()
+
+
+
+db.customer.aggregate([
+    {
+        $match: {
+            "LOAN.AMOUNT": {$exists: true}
+        }
+    },
+    {
+        $project: {
+            "FIRST_NAME": 1,
+            "SECOND_NAME": 1,
+            "LOAN.AMOUNT": {$subtract : [{$sum : "$LOAN.AMOUNT"},{$multiply : [{$sum : "$LOAN.AMOUNT"}, 0.05]}]},
+            "_id": 0
+        }
+    }
+]).forEach(function(result) {
+    db.customer.updateOne(
+      { "FIRST_NAME": result["FIRST_NAME"] },
+      { "SECOND_NAME": result["SECOND_NAME"] },
+      { $set: { "LOAN.AMOUNT": result["LOAN.AMOUNT"] } }
+    );
+});
+
+db.customer.aggregate( [
+    {
+        $match: {
+            "LOAN.AMOUNT": {$exists: true}
+        }
+    },
+    {
+        $project: {
+            "FIRST_NAME": 1,
+            "SECOND_NAME": 1,
+            "LOAN.AMOUNT": {$subtract : [{$sum : "$LOAN.AMOUNT"},{$multiply : [{$sum : "$LOAN.AMOUNT"}, 0.05]}]},
+            "_id": 0
+        }
+    }
+] ).forEach( doc => db.customer.updateOne( { _id: doc._id }, { $set: { "LOAN.AMOUNT": doc.LOAN.AMOUNT } } )
+
+
+
+db.customer.aggregate([
+    {
+        $match: {
+            "LOAN.AMOUNT": { $exists: true},
+            ID_DISCOUNT: { $exists: true}
+        }
+    },
+    {
+        $project: {
+            "FIRST_NAME": 1,
+            "SECOND_NAME": 1,
+            "LOAN.AMOUNT": {$subtract : [{$sum : "$LOAN.AMOUNT"},{$multiply : [{$sum : "$LOAN.AMOUNT"}, 0.05]}]},
+            "_id": 0
+        }
+    }
+]).pretty()
+
+
+db.customer.aggregate( [
+    {
+        $match: {
+            "LOAN.AMOUNT": {$exists: true}
+        }
+    },
+    {
+        $project: {
+            "FIRST_NAME": 1,
+            "SECOND_NAME": 1,
+            "LOAN.AMOUNT": {$subtract : [{$sum : "$LOAN.AMOUNT"},{$multiply : [{$sum : "$LOAN.AMOUNT"}, 0.05]}]}
+        }
+    }
+] ).forEach( doc => db.customer.updateOne( { _id: doc._id }, { $set: { "LOAN.AMOUNT": doc.LOAN.AMOUNT } } ) )
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+db.customer.find( {LOAN: { $exists: false } },
+{SECOND_NAME: 1, FIRST_NAME: 1} )
+
+db.customer.find( {LOAN: { $exists: true } },
+{SECOND_NAME: 1, FIRST_NAME: 1, "LOAN.AMOUNT": 1, _id: 0} ).pretty()
+
+db.customer.find( {LOAN: { $exists: true }, ID_DISCOUNT: { $exists: true } },
+{SECOND_NAME: 1, FIRST_NAME: 1, "LOAN.AMOUNT": 1, _id: 0} ).pretty()

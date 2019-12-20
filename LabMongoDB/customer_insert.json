@@ -1,0 +1,111 @@
+db.getCollection("customer").insertMany(
+[
+  {
+    "ID": 7,
+    "SECOND_NAME": "Дьячков",
+    "FIRST_NAME": "Вениамин",
+    "LOAN":
+    {
+    "ID": 1,
+    "AMOUNT": 20000
+  }
+  },
+  {
+    "ID": 10,
+    "SECOND_NAME": "Сильвестр",
+    "FIRST_NAME": "Кулаков"
+  },
+  {
+    "ID": 9,
+    "SECOND_NAME": "Ситников",
+    "FIRST_NAME": "Игорь ",
+    "LOAN":
+     {
+    "ID": 3,
+    "AMOUNT": 40000
+  }
+  },
+  {
+    "ID": 5,
+    "SECOND_NAME": "Илясов",
+    "FIRST_NAME": "Андрей "
+  },
+  {
+    "ID": 3,
+    "SECOND_NAME": "Большаков",
+    "FIRST_NAME": "Евгений ",
+    "ID_DISCOUNT": {
+    "ID": 2,
+    "TITLE": "Обычная",
+    "AMOUNT": 2
+  }
+  },
+  {
+    "ID": 2,
+    "SECOND_NAME": "Сергей",
+    "FIRST_NAME": "Сергей"
+  },
+  {
+    "ID": 1,
+    "SECOND_NAME": "Иванов",
+    "FIRST_NAME": "Иван",
+    "ID_DISCOUNT":
+    {
+    "ID": 1,
+    "TITLE": "Малая",
+    "AMOUNT": 1
+  }
+  },
+  {
+    "ID": 8,
+    "SECOND_NAME": "Королёв",
+    "FIRST_NAME": "Артём "
+  },
+  {
+    "ID": 6,
+    "SECOND_NAME": "Ефимов",
+    "FIRST_NAME": "Леонид",
+    "LOAN":
+    {
+    "ID": 2,
+    "AMOUNT": 20000
+  }
+  },
+  {
+    "ID": 4,
+    "SECOND_NAME": "Калашников",
+    "FIRST_NAME": "Вальтер ",
+    "ID_DISCOUNT":
+    {
+    "ID": 3,
+    "TITLE": "Большая",
+    "AMOUNT": 5
+  },
+  "LOAN":
+    {
+    "ID": 4,
+    "AMOUNT": 45000
+  }
+  },
+  {
+    "ID": 12,
+    "SECOND_NAME": "Терентьев",
+    "FIRST_NAME": "Владимир"
+  },
+  {
+    "ID": 11,
+    "SECOND_NAME": "Громов",
+    "FIRST_NAME": "Альберт"
+  },
+  {
+    "ID": 140,
+    "SECOND_NAME": "Нулл",
+    "FIRST_NAME": "Нулл"
+  },
+  {
+    "ID": 141,
+    "SECOND_NAME": "без оп",
+    "FIRST_NAME": "без оп"
+  }
+]
+)
